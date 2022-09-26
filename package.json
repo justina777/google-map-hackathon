@@ -1,0 +1,25 @@
+{
+  "name": "google-map-hackathon",
+  "version": "0.0.1",
+  "description": "this is a app for the google map hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/justina777/google-map-hackathon.git"
+  },
+  "author": "justina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justina777/google-map-hackathon/issues"
+  },
+  "homepage": "https://github.com/justina777/google-map-hackathon#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "path": "^0.12.7"
+  }
+}
