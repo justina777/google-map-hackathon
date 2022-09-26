@@ -22,12 +22,11 @@ $ docker run --rm -it -p 8080:8080 web-co2-emission
 http://localhost:8080
 ```
 
-5. Stop the web application
-Find the running container
+5. Stop the web application by find the running container
 ```
 $ docker ps 
 ```
-Stop the running container
+6. Stop the running container
 ```
 $ docker stop <your_container_id>
 ```
