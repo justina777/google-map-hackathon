@@ -1,25 +1,30 @@
 {
   "name": "google-map-hackathon",
-  "version": "0.0.1",
   "description": "this is a app for the google map hackathon",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/justina777/google-map-hackathon.git"
-  },
-  "author": "justina",
-  "license": "MIT",
+  "version": "0.0.1",
+  "homepage": "https://github.com/justina777/google-map-hackathon#readme",
   "bugs": {
     "url": "https://github.com/justina777/google-map-hackathon/issues"
   },
-  "homepage": "https://github.com/justina777/google-map-hackathon#readme",
-  "dependencies": {
-    "ejs": "^3.1.8",
-    "express": "^4.18.1",
-    "path": "^0.12.7"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justina777/google-map-hackathon.git"
+  },
+  "files": [],
+  "author": "justina",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build --outDir dist --base './'",
+    "test": "tsc --no-emit",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.48.8",
+    "typescript": "^4.6.4",
+    "vite": "^2.9.9"
+  },
+  "private": true,
+  "dependencies": {}
 }

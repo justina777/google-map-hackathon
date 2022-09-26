@@ -9,9 +9,9 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Bundle app source
-COPY . .
+COPY dist/ .
 
 EXPOSE 8080
 
-RUN npm install
-CMD [ "node", "app.js" ]
+RUN npm i
+CMD [ "npm", "start" ]
