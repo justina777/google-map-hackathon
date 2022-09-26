@@ -7,10 +7,6 @@
 
 ## Running the Web Application
 1. Clone the source code from the following GitHub repository
-```
-$ git clone git@github.com:justina777/co2-emission.git .
-```
-
 2. Build the web application into a Docker image
 ```
 $ docker build --rm -t web-co2-emission -f app.Dockerfile .
