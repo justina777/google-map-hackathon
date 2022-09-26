@@ -3,11 +3,16 @@ var path = require("path");
 
 var routes = require("./routes");
 
+// env variables
+require('dotenv').config();
 
 var app = express();
 app.set("port", process.env.PORT || 8080);
 
-console.log(path.join(__dirname, "views"))
+// static files
+app.use(express.static(path.join(__dirname, "views/public")));
+
+// console.log(path.join(__dirname, "views"))
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 // rounting webpages

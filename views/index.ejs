@@ -1,4 +1,18 @@
 <%- include('./partials/_header') %>
-<h1>This is the app for the Google map Hackathon</h1>
+
+
+<div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=<%= process.env.GOOGLE_MAPS_API_KEY %>&callback=initMap&v=weekly"
+      defer
+    ></script>
+
 
 <%- include('./partials/_footer') %>
