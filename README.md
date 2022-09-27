@@ -21,6 +21,7 @@ $ docker run --rm -it -p 8080:8080 web-co2-emission
 ```
 http://localhost:8080
 ```
+> **_NOTE:_**  The google map only shows on the localhost website.
 
 5. Stop the web application by find the running container
 ```
