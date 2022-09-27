@@ -48,6 +48,8 @@ function initMap() {
         fillOpacity: 0.05,
     });
 
+    bermudaTriangle.setMap(map);
+
     // Construct the circle for each value in citymap.
     // Note: We scale the area of the circle based on the population.
     for (const city in citymap) {
@@ -64,7 +66,7 @@ function initMap() {
         });
     }
 
-    bermudaTriangle.setMap(map);
+    
 }
 
 window.initMap = initMap;

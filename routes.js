@@ -6,4 +6,8 @@ router.get("/", function(req,res){
     res.render("index");
 });
 
+router.get("/animation", function(req,res){
+    res.render("animation");
+});
+
 module.exports = router;
