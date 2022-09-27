@@ -16,6 +16,19 @@ body {
   padding: 0;
 }
 
+div.navbar-header{
+  width: 100%;
+  display: inline-block;
+}
+
+h1 {
+  width: 50%;
+  display: block;
+  margin: 0;
+  padding: 5px;
+  float: left;
+}
+
 ul {
   width: 10%;
   float: right;
