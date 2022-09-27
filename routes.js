@@ -10,4 +10,8 @@ router.get("/animation", function(req,res){
     res.render("animation");
 });
 
+router.get("/night_mode", function(req,res){
+    res.render("night_map");
+});
+
 module.exports = router;
