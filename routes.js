@@ -14,4 +14,8 @@ router.get("/night_mode", function(req,res){
     res.render("night_map");
 });
 
+router.get("/green_spaces", function(req,res){
+    res.render("data_feed");
+});
+
 module.exports = router;
