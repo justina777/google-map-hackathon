@@ -1,6 +1,7 @@
 let map;
 
 function initMap() {
+    // load the Trt map
     map = initTrtMap();
 
     // load the data of ON green spaces
