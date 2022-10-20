@@ -1,6 +1,6 @@
 // plot the toronto area
 function initTrtMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
+    map = new google.maps.Map(document.getElementById("main-map"), {
         center: { lat: 43.714452, lng: -79.388191 },
         zoom: 11,
     });

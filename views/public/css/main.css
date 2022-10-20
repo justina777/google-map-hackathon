@@ -1,10 +1,82 @@
-/* 
+
+/*
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
  */
- #map {
+
+#index-container{
+  height: 100%;
+  background: rgb(107 114 128);
+  opacity: 0.5;
+  position: relative;
+}
+
+#main-map {
     height: 100%;
-  }
+    width: 100%;
+}
+
+#centered{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -70%);
+}
+
+p{
+  text-align: initial;
+  font-size: 2em;
+  color: black;
+  font-family: serif;
+}
+
+h4{
+  text-align: initial;
+  font-size: 4em;
+  line-height: 1.2em;
+  color: black;
+  font-family: serif;
+}
+
+#start-button{
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2em;
+  margin: 4px 2px;
+  border-radius: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#start-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#start-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#start-button:hover span {
+  padding-right: 25px;
+}
+
+#start-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
   
 /* 
   * Optional: Makes the sample page fill the window. 
@@ -18,15 +90,10 @@ body {
 
 div.navbar-header{
   width: 100%;
-  display: inline-block;
-}
-
-h1 {
-  width: 50%;
-  display: block;
-  margin: 0;
-  padding: 5px;
-  float: left;
+  overflow: hidden;
+  background: linear-gradient(45deg, rgb(127 127 127), transparent);
+  z-index: -1;
+  opacity: 0.6;
 }
 
 ul {
@@ -48,6 +115,7 @@ li a {
   text-align: center;
   padding: 12px;
   text-decoration: none;
+  font-family: serif;
 }
 
 li a:hover {
