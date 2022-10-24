@@ -11,9 +11,22 @@
   position: relative;
 }
 
+#green-space-container{
+  display: flex;
+}
+
 #main-map {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+#green-space-container #main-map{
+  flex: 1;
+  height: 1000px;
+}
+
+#story{
+  flex: 0.6;
 }
 
 #centered{
@@ -36,6 +49,11 @@ h4{
   line-height: 1.2em;
   color: black;
   font-family: serif;
+}
+
+img{
+  height: 300px;
+  width: 100%;
 }
 
 #start-button{
@@ -76,6 +94,18 @@ h4{
 #start-button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+#title{
+  padding-left: 2%;
+}
+#description, #facts{
+  font-size: 20px;
+  padding-left: 2%;
+}
+
+#description{
+  font-family: serif;
 }
   
 /* 
