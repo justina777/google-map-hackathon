@@ -45,24 +45,25 @@
   transform: translate(-50%, -70%);
 }
 
-/* story-night styles */
-#story-night{
+/* styles for a story floating*/
+.story-floating{
   position: absolute;
   top: 45%;
-  left: 70%;
-  width: 310px;
+  left: 65%;
+  width: 390px;
   background-color: rgba(63,76,94,224);
   padding-left: 2%;
   padding-right: 2%;
 }
 
-#story-night #page-content{
+/* story-night text style */
+.story-floating .page-content{
   color: #36d7ff;
   font-size: 18px;
   margin-bottom: 2%;
 }
 
-#story-night #title{
+.story-floating .title{
   color: #36d7ff;
   font-size: 28px;
   margin: 0px;
@@ -70,13 +71,13 @@
   font-family: "centuryGothicBold";
 }
 
-#story-night #description{
+.story-floating .description{
   color: #ffffff;
   font-size: 15px;
   font-family: "centuryGothic";
 }
 
-#story-night #facts{
+.story-floating .facts{
   padding-top: 1.5%;
   color: #ffffff;
   font-size: 12px;
@@ -85,7 +86,7 @@
   text-align: justify;
 }
 
-#story-night #next-renew-energy{
+.story-floating .btn-next-story{
   margin-top: 2%;
   margin-bottom: 2.5%;
   float: right;
@@ -108,7 +109,7 @@
   width: 100%;
 }
 
-#story-light{
+.story-light{
   position: absolute;
   top: 0%;
   right: 0%;
@@ -120,19 +121,19 @@
 }
 
 /* story-light styles */
-#glass-container{
+.story-light #glass-container{
   margin: 0;
   padding-left: 10%;
   padding-right: 10%;
   color: #36d7ff;
 }
 
-#story-light #page-content{
+.story-light #page-content{
   font-size: 18px;
   margin-bottom: 2%;
 }
 
-#story-light #title{
+.story-light #title{
   font-size: 28px;
   margin: 0;
   font-family: "centuryGothicBold";
@@ -210,16 +211,28 @@ img{
   opacity: 1;
   right: 0;
 }
+
+#description, #facts{
+  font-size: 20px;
+}
+
+#description{
+  /* font-family: serif; */
+  font-family: 'Century Gothic';
+}
   
-/* 
-  * Optional: Makes the sample page fill the window. 
-  */
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
+
+/* 
+  * Optional: Makes the sample page fill the window. 
+  */
 
 div.navbar-header{
   width: 100%;

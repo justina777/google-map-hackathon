@@ -1,22 +1,21 @@
 <%- include('./partials/_header') %>
 <script type="module" src="js/renew_energy_install.js"></script>
-<div id="renew-energy-container">
-    <div id="main-map">
-    </div>
-    <div id="story-night">
-        <p id="page-content"><u>3 of 5</u></p>
-        <p id="title">Leader in Renewables Industry.</p>
-        <p id="description">Total renewable generation in 2018 was up to 34.8% of all generation.</p>
-        <hr/>
-        <p id="facts">Over the past 20 years, more than 100 renewable energy systems have been installed around Toronto
-            City buildings and properties.
-            Using solar photovoltaic (PV), solar pool heating, geothermal, the system contributes to establishing a
-            robust domestic market that prioritizes sustained renewable energy development.
-        </p>
-        <button type="button" id="next-renew-energy" onclick="location.href='/green_spaces'">Next &nbsp; ></button>
-    </div>
 
+<div id="main-map">
 </div>
+<div id="story" class="story-floating">
+    <p class="page-content"><u>3 of 5</u></p>
+    <p class="title">Leader in Renewables.</p>
+    <p class="description"> Total renewable generation in 2018 was 34.8% of total generation.</p>
+    <hr/>
+    <p class="facts">Over the past 20 years, more than 100 renewable energy systems have been installed around Toronto
+        City buildings and properties.
+        Using solar photovoltaic (PV), solar pool heating, geothermal, the system contributes to establishing a
+        robust domestic market that prioritizes sustained renewable energy development.
+    </p>
+    <button type="button" class="btn-next-story" onclick="location.href='/pollution'">Next ></button>
+</div>
+
 <!--
  The `defer` attribute causes the callback to execute after the full HTML
  document has been parsed. For non-blocking uses, avoiding race conditions,
