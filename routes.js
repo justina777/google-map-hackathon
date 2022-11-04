@@ -22,4 +22,8 @@ router.get("/renew_energy_installations", function(req,res){
     res.render("layout_renew_energy_install");
 });
 
+router.get("/pollution", function(req,res){
+    res.render("ghg_emission");
+});
+
 module.exports = router;
