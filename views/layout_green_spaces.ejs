@@ -1,18 +1,28 @@
 <%- include('./partials/_header') %>
 <script type="module" src="js/green_spaces.js"></script>
 <div id="green-space-container">
-<div id="main-map"></div>
+    <div id="main-map"></div>
 
-<div id="story">
-<!-- TODO: image source from https://www.blogto.com/city/2017/10/toronto-ranked-greenest-cities-world/ -->
-    <img src="https://media.blogto.com/articles/20171099-green-toronto.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70" alt="Green Space Picture"/>
-    <h2 id="title">One of the Greenest Cities in the World</h2>
-    <p id="description">Toronto ranks 31st on the Green Cities Index, with around 20 per cent green space.</p>
-    <p id="facts">In 2017, a project called Treepedia identified that Toronto is having one of the world’s most luxuriant urban forests.
-        The finding of this project showed that approximately a fifth of the city is covered by a green canopy, which is significantly higher than other cities like Paris (8.8 per cent), New York (13.5 per cent), and London (12.7 per cent). City of Toronto has devoted to building green spaces, park systems, and extensive network of trails to increase the percentage of tree cover rate, which contributes to an increasing percentage of green space.
-        <!-- The contribution of the city on creating green spaces and extensive network of trails and park systems all makes Toronto’s tree cover rate undoubtedly high. -->
-        </p>
-</div>
+    <div id="story-light">
+        <div id="glass-container">
+            <p id="page-content"><u>4 of 5</u></p>
+            <p id="title">One of the Greenest Cities in the World</p>
+            <p id="description">Toronto ranks 31st on the Green Cities Index, with around 20 per cent green space.</p>
+        </div>
+        <img src="images/green-spaces.jpg" alt="Green Space Picture" width="1069" height="598"/>
+        <div id="facts-container">
+            <p id="facts">In 2017, a project called Treepedia identified that Toronto is having one of the world’s most
+                luxuriant urban forests.
+                The finding of this project showed that approximately a fifth of the city is covered by a green canopy,
+                which is significantly higher than other cities like Paris (8.8 per cent), New York (13.5 per cent), and
+                London (12.7 per cent). City of Toronto has devoted to building green spaces, park systems, and
+                extensive network of trails to increase the percentage of tree cover rate, which contributes to an
+                increasing percentage of green space.
+                <!-- The contribution of the city on creating green spaces and extensive network of trails and park systems all makes Toronto’s tree cover rate undoubtedly high. -->
+            </p>
+            <button type="button" id="next-green-spaces" onclick="location.href='/green_spaces'">Next &nbsp; ></button>
+        </div>
+    </div>
 
 </div>
 <!--

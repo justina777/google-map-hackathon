@@ -4,6 +4,17 @@
  * that contains the map. 
  */
 
+/* Add century gothic font style */
+@font-face {
+  font-family: 'centuryGothic';
+  src: url('../assets/century_gothic.ttf');
+}
+
+@font-face {
+  font-family: 'centuryGothicBold';
+  src: url('../assets/century_gothic_bold.ttf');
+}
+
 #index-container{
   height: 100%;
   background: rgb(107 114 128);
@@ -17,7 +28,9 @@
 }
 
 #green-space-container{
-  display: flex;
+  /*display: flex;*/
+  height: 100%;
+  position: relative;
 }
 
 #main-map {
@@ -32,6 +45,7 @@
   transform: translate(-50%, -70%);
 }
 
+/* story-night styles */
 #story-night{
   position: absolute;
   top: 45%;
@@ -42,7 +56,6 @@
   padding-right: 2%;
 }
 
-/* story-night text style */
 #story-night #page-content{
   color: #36d7ff;
   font-size: 18px;
@@ -51,20 +64,25 @@
 
 #story-night #title{
   color: #36d7ff;
-  font-size: 33px;
+  font-size: 28px;
   margin: 0px;
-  font-family: serif;
+  padding-top: 1%;
+  font-family: "centuryGothicBold";
 }
 
 #story-night #description{
   color: #ffffff;
-  font-size: 20px;
+  font-size: 15px;
+  font-family: "centuryGothic";
 }
 
 #story-night #facts{
   padding-top: 1.5%;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "centuryGothic";
+  text-align: justify;
 }
 
 #story-night #next-renew-energy{
@@ -80,35 +98,77 @@
   cursor: pointer;
   padding: 4px 20px;
   border-color: white;
+  font-family: "centuryGothicBold";
 }
 
 #green-space-container #main-map{
-  flex: 1;
-  height: 1000px;
+  /*flex: 1;*/
+  /*height: 1000px;*/
+  height: 100%;
+  width: 100%;
 }
 
-#story{
-  flex: 0.6;
+#story-light{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 500px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  backdrop-filter: blur(3px);
+  /*flex: 0.6;*/
 }
 
-p{
-  text-align: initial;
-  font-size: 2em;
-  color: black;
-  font-family: serif;
+/* story-light styles */
+#glass-container{
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #36d7ff;
 }
 
-h4{
-  text-align: initial;
-  font-size: 4em;
-  line-height: 1.2em;
-  color: black;
-  font-family: serif;
+#story-light #page-content{
+  font-size: 18px;
+  margin-bottom: 2%;
+}
+
+#story-light #title{
+  font-size: 28px;
+  margin: 0;
+  font-family: "centuryGothicBold";
 }
 
 img{
   height: 300px;
   width: 100%;
+}
+
+#story-light #facts{
+  padding-top: 1.5%;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "centuryGothic";
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#next-green-spaces{
+  margin-top: 2%;
+  margin-bottom: 2.5%;
+  float: right;
+  margin-right: 10%;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgba(63,76,94,224);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 4px 20px;
+  border-color: white;
+  font-family: "centuryGothicBold";
 }
 
 #start-button{
@@ -149,14 +209,6 @@ img{
 #start-button:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-#description, #facts{
-  font-size: 20px;
-}
-
-#description{
-  font-family: serif;
 }
   
 /* 
@@ -201,4 +253,11 @@ li a {
 
 li a:hover {
   background-color: #bcbcbc;
+}
+
+.footer{
+  color: white;
+  text-align: center;
+  font-family: "centuryGothic";
+  z-index: 2;
 }
