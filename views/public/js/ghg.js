@@ -2,18 +2,12 @@ let map;
 
 function initMap() {
     // load the Trt map
-    // map = initMap();
+    map = initPreMap({ lat: 43.714452, lng: -79.288191 }, 11.3);
 
-    map = new google.maps.Map(document.getElementById("main-map"), {
-        center: { lat: 43.714452, lng: -79.388191 },
-        zoom: 11,
-    });
-
-    // var colors = ['#3366CC', '#DC3912', '#FF9900', '#109618', '#990099', '#3B3EAC', '#0099C6', '#DD4477', '#66AA00', '#B82E2E', '#316395', '#994499', '#22AA99', '#AAAA11', '#6633CC', '#E67300', '#8B0707', '#329262', '#5574A6', '#3B3EAC'];
+    // set colors for volume
     var colors = ['#9EC7E9', '#599241', '#1DAB75', '#117594', '#0C2E4C']
     
     // load the data of ON green spaces
-    // map.data.loadGeoJson('data/city_wards_data.geojson');
     map.data.loadGeoJson('data/toronto_47_ward_model.geojson');
 
     // set stly for emission

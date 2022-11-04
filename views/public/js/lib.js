@@ -1,9 +1,26 @@
-// plot the toronto area
-function initTrtMap() {
+function initPreMap(coor_center, zoom_index){
+
+    // set default values
+    if (coor_center == null){
+        coor_center = { lat: 43.714452, lng: -79.388191 };
+    }
+    
+    if (zoom_index == null){
+        zoom_index = 11
+    }
+
     map = new google.maps.Map(document.getElementById("main-map"), {
-        center: { lat: 43.714452, lng: -79.388191 },
-        zoom: 11,
+        center: coor_center,
+        zoom: zoom_index,
     });
+
+    return map
+}
+
+// plot the toronto area with a red boundary
+function initTrtMap(coor_center, zoom_index) {    
+
+    map = initPreMap(coor_center, zoom_index)
 
     // Define the LatLng coordinates for the polygon's path.
     const triangleCoords = [
