@@ -15,7 +15,11 @@ router.get("/night_mode", function(req,res){
 });
 
 router.get("/green_spaces", function(req,res){
-    res.render("data_feed");
+    res.render("layout_green_spaces");
+});
+
+router.get("/renew_energy_installations", function(req,res){
+    res.render("layout_renew_energy_install");
 });
 
 module.exports = router;

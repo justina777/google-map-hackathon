@@ -1,0 +1,30 @@
+<%- include('./partials/_header') %>
+<script type="module" src="js/renew_energy_install.js"></script>
+<div id="renew-energy-container">
+    <div id="main-map">
+    </div>
+    <div id="story-night">
+        <p id="page-content"><u>3 of 5</u></p>
+        <p id="title">Leader in Renewables.</p>
+        <p id="description"> Total renewable generation in 2018 was 34.8% of total generation.</p>
+        <hr/>
+        <p id="facts">Over the past 20 years, more than 100 renewable energy systems have been installed around Toronto City buildings and properties.
+            Using solar photovoltaic (PV), solar pool heating, geothermal, the system contributes to establishing a robust domestic market that prioritizes sustained renewable energy development
+        </p>
+        <button type="button" id="next-renew-energy" onclick="location.href='/green_spaces'">Next ></button>
+    </div>
+
+</div>
+<!--
+ The `defer` attribute causes the callback to execute after the full HTML
+ document has been parsed. For non-blocking uses, avoiding race conditions,
+ and consistent behavior across browsers, consider loading using Promises
+ with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+-->
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=<%= process.env.GOOGLE_MAPS_API_KEY %>&callback=initMap&v=weekly"
+        defer
+></script>
+
+
+<%- include('./partials/_footer') %>
