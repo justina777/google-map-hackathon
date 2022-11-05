@@ -9,7 +9,7 @@ function initMap() {
 
     heatmap = new google.maps.visualization.HeatmapLayer({
         data: getPoints(),
-        radius: 50,
+        radius: 30,
         Opacity: 0.03,
       });
     heatmap.setMap(map);
@@ -24,7 +24,7 @@ function loadTrend() {
     heatmap.setMap(null);
     heatmap = new google.maps.visualization.HeatmapLayer({
         data: getPoints(year),
-        radius: 50,
+        radius: 30,
         Opacity: 0.03,
       });
     heatmap.setMap(map);
@@ -49,9 +49,13 @@ function getPoints(year){
         if (dataLocs.locations[i].year != year){
             continue
         }
+        if (parseFloat(dataLocs.locations[i].lng) == null || parseFloat(dataLocs.locations[i].lat) == null ){
+            console.log(dataLocs.locations[i]);
+            continue
+        }
         var loc = {location: new google.maps.LatLng(dataLocs.locations[i].lat ,dataLocs.locations[i].lng),  weight: dataLocs.locations[i].weight/10};
         locs.push(loc);
     }
-    // console.log(locs)
+    // console.log(year, locs.length)
     return locs
 }

@@ -111,6 +111,8 @@ def generate(args):
             obLoc['lat'] =  row['lng']
             if row['ele_quantity'] == 0:
                 continue
+            if pandas.isnull(row['ele_quantity']):
+                continue
         
             weight = 0
             if row['ele_quantity'] > 0:
