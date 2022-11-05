@@ -261,31 +261,6 @@ div.navbar-header{
   opacity: 0.6;
 }
 
-ul {
-  /* width: 30%; */
-  float: right;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-family: serif;
-}
-
-li a:hover {
-  background-color: #bcbcbc;
-}
 
 .footer{
   color: white;
@@ -297,4 +272,32 @@ li a:hover {
   width: 100%;
   font-size: 12px;
   z-index: 2;
+}
+
+#ghg-label{
+  color:white;
+  position: absolute;
+  padding: 10px;
+  z-index: 2;
+  bottom: 3%;
+  left: 49%;
+  width: 210px;
+  background-color: rgba(63,76,94,224);
+}
+
+#ghg-label ul li{
+  position: inline;
+  line-height: 20px;
+}
+
+#ghg-label ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#ghg-label ul li div.color{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
