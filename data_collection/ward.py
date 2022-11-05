@@ -114,7 +114,7 @@ def generate(args):
         
             weight = 0
             if row['ele_quantity'] > 0:
-                weight = math.log(row['ele_quantity'])/10
+                weight = round(math.log(row['ele_quantity']), 2)
             # if weight == 0:
             #     print("{location: new google.maps.LatLng(",row['lng'],",",row['lat'],"), weight: ",0,"},")
             # else:

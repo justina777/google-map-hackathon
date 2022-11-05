@@ -2,14 +2,15 @@ let heatmap;
 let year = 2015;
 function initMap() {
     // load the Trt map
-    map = initTrtMap();
+    map = initTrtMap({ lat: 43.7274114, lng: -79.2363336 }, 11.22);
 
     // set the night mode
     setNightMode(map);
 
     heatmap = new google.maps.visualization.HeatmapLayer({
         data: getPoints(),
-        radius: 30,
+        radius: 50,
+        Opacity: 0.03,
       });
     heatmap.setMap(map);
     year += 1;
@@ -19,11 +20,12 @@ window.initMap = initMap;
 const timeoutTrend = setInterval(loadTrend, 3000);
 
 function loadTrend() {
-    console.log(year);
+    // console.log(year);
     heatmap.setMap(null);
     heatmap = new google.maps.visualization.HeatmapLayer({
         data: getPoints(year),
-        radius: 30,
+        radius: 50,
+        Opacity: 0.03,
       });
     heatmap.setMap(map);
     year += 1;
@@ -47,9 +49,9 @@ function getPoints(year){
         if (dataLocs.locations[i].year != year){
             continue
         }
-        var loc = {location: new google.maps.LatLng(dataLocs.locations[i].lat ,dataLocs.locations[i].lng),  weight: dataLocs.locations[i].weight/5};
+        var loc = {location: new google.maps.LatLng(dataLocs.locations[i].lat ,dataLocs.locations[i].lng),  weight: dataLocs.locations[i].weight/10};
         locs.push(loc);
     }
-    console.log(locs)
+    // console.log(locs)
     return locs
 }
