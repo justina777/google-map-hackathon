@@ -1,5 +1,3 @@
-let map;
-
 function initMap() {
     // load the Trt map
     map = initPreMap({ lat: 43.714452, lng: -79.288191 }, 11.3);
