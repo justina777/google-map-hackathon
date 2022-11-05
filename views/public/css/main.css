@@ -15,11 +15,29 @@
   src: url('../assets/century_gothic_bold.ttf');
 }
 
-#index-container{
+#index-bottom{
   height: 100%;
-  background: rgb(107 114 128);
-  opacity: 0.5;
-  position: relative;
+  /* background: rgb(107 114 128); */
+  /* opacity: 0.5; */
+  /* position: relative; */
+}
+
+#index-layer1{
+  height: 100%;
+  position: absolute;
+  top:0;
+  z-index: 1;
+  /* background: rgb(107 114 128); */
+  /* opacity: 0.5; */
+  /* position: relative; */
+}
+
+#index-title #st-btn{
+  cursor: pointer;
+  /* cursor: url(../images/cursor_icon.png); */
+}
+#index-title #st-btn img:hover{
+  content:url("../images/start_btn_click.png");
 }
 
 #renew-energy-container{
@@ -38,11 +56,12 @@
   width: 100%;
 }
 
-#centered {
+#index-title {
   position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -70%);
+  top: 40%;
+  right: 5%;
+  z-index: 3;
+  text-align: right;
 }
 
 /* styles for a story floating*/
@@ -139,7 +158,7 @@
   font-family: "centuryGothicBold";
 }
 
-img{
+#story-light img{
   height: 300px;
   width: 100%;
 }
@@ -171,7 +190,7 @@ img{
   border-color: white;
   font-family: "centuryGothicBold";
 }
-
+/* 
 #start-button{
   background-color: dodgerblue;
   border: none;
@@ -210,7 +229,7 @@ img{
 #start-button:hover span:after {
   opacity: 1;
   right: 0;
-}
+} */
 
 #description, #facts{
   font-size: 20px;
