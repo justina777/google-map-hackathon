@@ -32,6 +32,15 @@
   /* position: relative; */
 }
 
+#index-layer3{
+  position: absolute;
+  top:0;
+  z-index: 2;
+}
+#index-layer3 img{
+  opacity: 0;
+}
+
 #index-title #st-btn{
   cursor: pointer;
   /* cursor: url(../images/cursor_icon.png); */

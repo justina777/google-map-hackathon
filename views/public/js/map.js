@@ -44,4 +44,19 @@ function initMap() {
     
 }
 
-window.initMap = initMap;
+let opacity = 0.1;
+// window.initMap = initMap;
+const tFadeIn = setInterval(fadeIn, 200);
+
+function fadeIn()
+{
+    var element = document.getElementById('index-layer3-img');
+    // console.log(element);
+    opacity = opacity + 0.1;
+    element.style.opacity = opacity 
+    if(opacity >= 1) {
+        opacity = 1.0;
+        clearInterval(tFadeIn);
+        console.log('remove interval');
+    } 
+}
