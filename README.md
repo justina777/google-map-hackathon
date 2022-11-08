@@ -1,11 +1,12 @@
 # Google map hackathon
+The goal of this project is to visualize the influential factors to climate change by using Google Map APIs. 
 
 ## Prerequisites
-1. [Docker](https://docs.docker.com/get-docker/)
-2. [Node.js](https://nodejs.org/en/download/)  
-3. Git
+<!-- 1. [Docker](https://docs.docker.com/get-docker/) -->
+- [Node.js](https://nodejs.org/en/download/)  
+- Git
 
-## Running the Web Application
+<!-- ## Running the Web Application
 1. Clone the source code from the following GitHub repository
 2. Build the web application into a Docker image
 ```
@@ -30,7 +31,9 @@ $ docker ps
 6. Stop the running container
 ```
 $ docker stop <your_container_id>
-```
+``` -->
 
 
 ## Reference
+- [Google Map APIs](https://developers.google.com/maps/documentation)
+- [Toronto Open Data](https://open.toronto.ca/)
