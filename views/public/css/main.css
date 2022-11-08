@@ -15,6 +15,10 @@
   src: url('../assets/century_gothic_bold.ttf');
 }
 
+*{
+  cursor: url('../images/cursor_icon_64.png') 30 32, pointer;
+}
+
 #index-bottom{
   height: 100%;
   /* background: rgb(107 114 128); */
@@ -41,10 +45,6 @@
   opacity: 0;
 }
 
-#index-title #st-btn{
-  cursor: pointer;
-  /* cursor: url(../images/cursor_icon.png); */
-}
 #index-title #st-btn img:hover{
   content:url("../images/start_btn_click.png");
 }
@@ -55,7 +55,6 @@
 }
 
 #green-space-container{
-  /*display: flex;*/
   height: 100%;
   position: relative;
 }
@@ -124,15 +123,13 @@
   background-color: rgba(63,76,94,224);
   text-decoration: none;
   display: inline-block;
-  cursor: pointer;
+  cursor: url('../images/cursor_icon_64.png') 30 32, pointer;
   padding: 4px 20px;
   border-color: white;
   font-family: "centuryGothicBold";
 }
 
 #green-space-container #main-map{
-  /*flex: 1;*/
-  /*height: 1000px;*/
   height: 100%;
   width: 100%;
 }
@@ -145,7 +142,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, .7);
   backdrop-filter: blur(3px);
-  /*flex: 0.6;*/
 }
 
 /* story-light styles */
@@ -184,7 +180,7 @@
 }
 
 #next-green-spaces{
-  margin-top: 2%;
+  margin-top: 0%;
   margin-bottom: 2.5%;
   float: right;
   margin-right: 10%;
@@ -194,61 +190,35 @@
   background-color: rgba(63,76,94,224);
   text-decoration: none;
   display: inline-block;
-  cursor: pointer;
+  cursor: url('../images/cursor_icon_64.png') 30 32, pointer;
   padding: 4px 20px;
   border-color: white;
   font-family: "centuryGothicBold";
 }
-/* 
-#start-button{
-  background-color: dodgerblue;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 2em;
-  margin: 4px 2px;
-  border-radius: 12px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-
-#start-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#start-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-#start-button:hover span {
-  padding-right: 25px;
-}
-
-#start-button:hover span:after {
-  opacity: 1;
-  right: 0;
-} */
 
 #description, #facts{
   font-size: 20px;
 }
 
 #description{
-  /* font-family: serif; */
   font-family: 'Century Gothic';
 }
-  
+
+#next-main{
+  margin-top: 3%;
+  float: right;
+  margin-right: 10%;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgba(63,76,94,224);
+  text-decoration: none;
+  display: inline-block;
+  cursor: url('../images/cursor_icon_64.png') 30 32, pointer;
+  padding: 4px 20px;
+  border-color: white;
+  font-family: "centuryGothicBold";
+}
 
 html,
 body {
@@ -256,7 +226,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 /* 
   * Optional: Makes the sample page fill the window. 
@@ -269,7 +238,6 @@ div.navbar-header{
   z-index: -1;
   opacity: 0.6;
 }
-
 
 .footer{
   color: white;
@@ -288,25 +256,28 @@ div.navbar-header{
   position: absolute;
   padding: 10px;
   z-index: 2;
-  bottom: 3%;
-  left: 49%;
+  bottom: 4%;
+  left: 1%;
   width: 210px;
-  background-color: rgba(63,76,94,224);
+  background-color: rgba(0, 0, 0, .6);
+  backdrop-filter: blur(3px);
 }
 
-#ghg-label ul li{
-  position: inline;
+#ghg-label table{
   line-height: 20px;
 }
 
-#ghg-label ul{
+#ghg-label tr td{
   list-style-type: none;
-  margin: 0;
+  margin-bottom: 1px;
   padding: 0;
 }
 
-#ghg-label ul li div.color{
-  display: inline-block;
+.color{
   width: 20px;
   height: 20px;
+}
+
+.number{
+  display:inline-table;
 }

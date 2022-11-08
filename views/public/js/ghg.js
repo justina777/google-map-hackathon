@@ -1,6 +1,6 @@
 function initMap() {
     // load the Trt map
-    map = initPreMap({ lat: 43.714452, lng: -79.288191 }, 11.3);
+    map = initPreMap({ lat: 43.714452, lng: -79.288191 }, 10.95);
 
     // set colors for volume
     var colors = ['#9EC7E9', '#599241', '#1DAB75', '#117594', '#0C2E4C']

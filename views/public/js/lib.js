@@ -11,7 +11,7 @@ function initPreMap(coor_center, zoom_index){
 
     map = new google.maps.Map(document.getElementById("main-map"), {
         center: coor_center,
-        zoom: zoom_index,
+        zoom: zoom_index
     });
 
     return map
@@ -38,10 +38,20 @@ function initTrtMap(coor_center, zoom_index) {
         strokeOpacity: 0.8,
         strokeWeight: 2,
         fillColor: "#FF0000",
-        fillOpacity: 0.05,
+        fillOpacity: 0.05
     });
 
     trtArea.setMap(map);
+
+    return map;
+}
+
+function initSatelliteMap(coor_center, zoom_index){
+    map = new google.maps.Map(document.getElementById("main-map"), {
+        center: coor_center,
+        zoom: zoom_index,
+        mapTypeId: 'hybrid'
+    });
 
     return map;
 }

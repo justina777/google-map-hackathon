@@ -2,7 +2,7 @@ let map;
 
 function initMap() {
     // load the Trt map
-    map = initTrtMap({ lat: 43.7274114, lng: -79.2363336 }, 11.22);
+    map = initSatelliteMap({ lat: 43.7274114, lng: -79.2363336 }, 11.22);
 
     // load the data of ON green spaces
     map.data.loadGeoJson('data/green_space.geojson');
